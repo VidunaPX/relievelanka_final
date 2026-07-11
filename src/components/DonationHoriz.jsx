@@ -60,11 +60,9 @@ const DonationHoriz = () => {
         }
 
         gsap.set(trackRef.current, { x: -distance * p });
-        const busTop = (a.y + (b.y - a.y) * t) * vh - vh * 0.5;
-        const busLeft = (a.x + (b.x - a.x) * t) * trackW;
         gsap.set(busRef.current, {
-          left: busLeft,
-          top: busTop,
+          x: (a.x + (b.x - a.x) * t) * trackW,
+          y: (a.y + (b.y - a.y) * t) * vh - 20,
           rotation: Math.atan2((b.y - a.y) * vh, (b.x - a.x) * trackW) * (180 / Math.PI),
           autoAlpha: 1,
         });
@@ -144,7 +142,7 @@ const DonationHoriz = () => {
         ))}
 
         <div ref={busRef} className="bus-icon-wrapper">
-          <Bus className="size-14" />
+          <Bus className="size-10" />
         </div>
       </div>
     </section>
