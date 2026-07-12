@@ -1,14 +1,19 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import '../styleCompants/Crisis.css';
 import useEmblaCarousel from 'embla-carousel-react';
-import image1 from '/image1.jpg';
-import image2 from '/image2.jpg';
-import image3 from '/image3.jpeg';
+import image1 from '/flood1.jpg';
+import image2 from '/landslide1.jpg';
+import image3 from '/landslide2.jpg';
+import image4 from '/school.jpg';
+import image5 from '/school2.jpg';
 
 const SLIDE_DATA = [
-  { title: "Interrupted Learning", desc: "School attendance in the region is inconsistent, shaped by distance, seasonal work, and household responsibilities. Gaps add up over time, and there's little support to help kids catch back up once they fall behind.", image: image1 },
-  { title: "Limited Learning Materials", desc: "Books, study space, and basic supplies are scarce outside of school hours. Many kids have nowhere to read, practice, or continue learning once the school day ends.", image: image2 },
-  { title: "Weather & Environmental Disruptions", desc: "The Knuckles Mountain Range brings heavy monsoon seasons and difficult terrain, which regularly disrupt school access and daily routines for families in the area.", image: image3 }
+  { title: "The Disaster", desc: "Cyclone Ditwah made landfall in November 2025, triggering flooding and landslides across the region. In the villages we work in, the damage wasn't a single bad storm, it was the start of a crisis that's still unfolding months later.", image: image1 },
+  { title: "The Damage", desc: "In the hills around Yahangala, land collapsed to depths of nearly 40 feet. Udattawa, Nelum Mala, Gala Naka, Mada Kele, and Uda Gal Debokkawa, the villages our program serves, were declared no-man's-land, unsafe for anyone to return to.", image: image2 },
+  { title: "The Cost", desc: "More than a dozen homes in Udattawa were buried outright. Dozens of bodies have been recovered, but recovery teams believe more remain 30 to 40 feet under the debris, so the full toll on these communities still isn't known.", image: image3 },
+  { title: "The Aftermath", desc: "Over 1,600 schools across Sri Lanka were damaged by the cyclone, including ones in our own service area. Even where buildings survived, torn roofs, flooded classrooms, and missing supplies have kept children from a normal school day.", image: image4 },
+  { title: "The Gap", desc: "Months after the cyclone, national relief funding still falls over $1.5 million short of what's needed for education alone, and supply shipments to affected regions face weeks of delay. In villages like ours, that gap is still being felt in classrooms today.", image: image5 },
+
 ];
 
 const Crisis = () => {

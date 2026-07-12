@@ -75,7 +75,7 @@
 .phase-button {
   appearance: none;
   border: 1px solid rgba(5, 9, 86, 0.28);
-  background: rgba(255, 255, 255, 0.46);
+  background: rgba(255, 255, 255, 0.25);
   color: #182044;
   font: inherit;
   font-size: 0.9rem;
@@ -105,9 +105,9 @@
 }
 
 .phase-button--active {
-  background: linear-gradient(135deg, var(--light-blue), var(--accent));
-  border-color: transparent;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(5, 9, 86, 0.4);
+  color: var(--dark-blue);
   box-shadow: 0 10px 24px rgba(5, 9, 86, 0.28);
 }
 

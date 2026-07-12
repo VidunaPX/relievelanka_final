@@ -114,8 +114,10 @@
 }
 
 .milestone-marker > div:first-child {
-  background: rgba(5, 9, 86, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .milestone-marker > div:last-child {

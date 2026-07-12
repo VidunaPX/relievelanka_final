@@ -13,10 +13,10 @@
 
 .video-background {
   --hero-scale: 1;
-  --hero-pad-x: clamp(1.5rem, 3vw, 3rem);
-  --hero-pad-y: 8px;
+  --hero-pad-x: clamp(0.5rem, 1.5vw, 1.5rem);
+  --hero-pad-y: clamp(0.5rem, 1.5vw, 1.5rem);
   --hero-pad-bottom: 0;
-  --hero-logo-size: clamp(72px, 5vw, 110px);
+  --hero-logo-size: clamp(50px, 3.5vw, 80px);
   --hero-menu-btn: clamp(40px, 3.2vw, 56px);
   --hero-title-size: clamp(6.5rem, 4.5vw, 6rem);
   --hero-cta-size: clamp(1.3rem, 1.8vw, 2rem);
@@ -221,9 +221,9 @@
 
   .video-background {
     --hero-scale: 0.92;
-    --hero-pad-x: clamp(0.9rem, 2.2vw, 2.4rem);
-    --hero-pad-y: clamp(0.8rem, 1.4vw, 1.4rem);
-    --hero-logo-size: clamp(58px, 6.5vw, 86px);
+    --hero-pad-x: clamp(0.3rem, 1vw, 1rem);
+    --hero-pad-y: clamp(0.3rem, 1vw, 1rem);
+    --hero-logo-size: clamp(40px, 4.5vw, 60px);
     --hero-menu-btn: clamp(36px, 4.2vw, 46px);
     --hero-title-size: clamp(1.8rem, 4.4vw, 3.3rem);
     --hero-cta-size: clamp(0.95rem, 2.2vw, 1.25rem);
@@ -260,8 +260,8 @@
   }
 
   .hero-title {
-    font-size: clamp(1.6rem, 5.5vw, 3.2rem);
-    max-width: 42ch;
+    font-size: clamp(1.4rem, 4.8vw, 2.8rem);
+    max-width: 38ch;
     line-height: 1.15;
   }
 
@@ -280,9 +280,9 @@
 
   .video-background {
     --hero-scale: 0.9;
-    --hero-pad-x: clamp(0.75rem, 3.2vw, 1.4rem);
-    --hero-pad-y: clamp(0.6rem, 2.2vw, 1.1rem);
-    --hero-logo-size: clamp(44px, 12vw, 68px);
+    --hero-pad-x: clamp(0.25rem, 1.5vw, 0.75rem);
+    --hero-pad-y: clamp(0.25rem, 1.5vw, 0.75rem);
+    --hero-logo-size: clamp(32px, 8vw, 48px);
     --hero-menu-btn: clamp(32px, 9vw, 44px);
     --hero-title-size: clamp(1.9rem, 7vw, 3.2rem);
     --hero-cta-size: clamp(1.05rem, 3.8vw, 1.35rem);
@@ -324,8 +324,8 @@
   }
 
   .hero-title {
-    font-size: clamp(2rem, 7.2vw, 3.3rem) !important;
-    max-width: 42ch;
+    font-size: clamp(1.6rem, 6.2vw, 2.9rem) !important;
+    max-width: 36ch;
     line-height: 1.12;
   }
 
@@ -360,13 +360,13 @@
   }
 
   .video-logo {
-    width: clamp(2.5rem, 10vw, 4rem) !important;
-    top: 6px;
-    left: 6px;
+    width: clamp(2rem, 8vw, 3rem) !important;
+    top: 2px;
+    left: 2px;
   }
 
   .hero-title {
-    font-size: clamp(1.7rem, 7.5vw, 2.3rem) !important;
+    font-size: clamp(1.4rem, 6.5vw, 2.1rem) !important;
     line-height: 1.06;
     margin-bottom: 0.12rem;
   }
