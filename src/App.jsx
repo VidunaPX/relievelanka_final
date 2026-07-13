@@ -12,7 +12,7 @@ import Donate from './components/Donate';
 import PostSection from './components/postSection';
 import DonationHoriz from './components/DonationHoriz';
 import Footer from './components/Footer';
-
+{/*import Why from './components/Why';*/}
 import useScrollObserver from './hooks/useScrollObserver';
 import { smoothScrollToId } from './utils/smoothScroll';
 
@@ -62,7 +62,7 @@ const App = () => {
         {/* <DonationJourney /> */}
 
         <DonationHoriz />
-
+        {/*<Why />*/}
         <OurWork />
 
         <Donate
@@ -71,8 +71,6 @@ const App = () => {
           goal={goal}
           donors={donors}
         />
-
-         {/* <AboutUs /> */}
       </main>
 
       {/* Footer */}

@@ -54,7 +54,11 @@ const AboutUs = () => {
   ];
 
   return (
-    <section id="about" className="flex items-center relative" style={{ minHeight: '100vh' }}>
+    <section
+      id="about"
+      className="flex items-center relative"
+      style={{ minHeight: '100vh', backgroundColor: '#526177', zIndex: 1, opacity: 0.9}}
+    >
       <div className="section-content max-w-6xl mx-auto px-6 py-24 text-center w-full">
         {/*<span className="inline-block text-xs uppercase tracking-widest mb-4 px-3 py-1 rounded-full" style={{ color: 'var(--accent)', border: '1px solid rgba(74,155,110,0.25)', background: 'rgba(74,155,110,0.04)' }}>
           <i className="fa-solid fa-users mr-1"></i> About Us
@@ -85,24 +89,24 @@ const AboutUs = () => {
               </div>
               <h3 className="font-display text-xl text-white mb-2">{member.name}</h3>
               <p className="text-sm mb-3" style={{ color: 'var(--accent-bright)' }}>{member.role}</p>
-              <p className="text-xs leading-relaxed" style={{ color: 'rgba(214,207,194,0.35)' }}>
+              <p className="text-xs leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.66)' }}>
                 {member.bio}
               </p>
               <div className="flex justify-center gap-3 mt-4">
                 <a 
                   href="#" 
-                  style={{ color: 'rgba(214,207,194,0.25)', transition: 'color 0.3s' }} 
+                  style={{ color: 'rgba(255, 255, 255, 0.66)', transition: 'color 0.3s' }} 
                   onMouseOver={(e) => e.target.style.color = 'var(--accent)'}
-                  onMouseOut={(e) => e.target.style.color = 'rgba(214,207,194,0.25)'}
+                  onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.66)'}
                   aria-label="LinkedIn"
                 >
                   <i className="fa-brands fa-linkedin text-sm"></i>
                 </a>
                 <a 
                   href="#" 
-                  style={{ color: 'rgba(214,207,194,0.25)', transition: 'color 0.3s' }} 
+                  style={{ color: 'rgba(255, 255, 255, 0.66)', transition: 'color 0.3s' }} 
                   onMouseOver={(e) => e.target.style.color = 'var(--accent)'}
-                  onMouseOut={(e) => e.target.style.color = 'rgba(214,207,194,0.25)'}
+                  onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.66)'}
                   aria-label="Twitter"
                 >
                   <i className="fa-brands fa-x-twitter text-sm"></i>

@@ -36,7 +36,7 @@ const OurWork = ({
       id={sectionId}
       className="our-work"
       aria-labelledby={`${sectionId}-heading`}
-      style={{ backgroundColor: '#c4c4cc' }}
+      style={{ color: 'var(--accent)' }}
     >
       <div className="our-work__inner">
         <div className="phase-section">

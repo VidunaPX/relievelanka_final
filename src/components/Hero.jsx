@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { label: 'Goals & Objectives', id: 'goals' },
   { label: 'Our Work', id: 'impact' },
   { label: 'Donate', id: 'donate' },
+  { label: 'About Us', id: 'about' },
 ];
 
 const Hero = ({ onShowDonationDetails }) => {

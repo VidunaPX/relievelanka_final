@@ -9,33 +9,33 @@ const Footer = () => {
           <i className="fa-solid fa-leaf" style={{ color: 'var(--accent)' }}></i>
           <span className="font-display text-lg text-white">Relieve Lanka</span>
         </div>
-        <p className="text-xs text-center" style={{ color: 'rgba(214,207,194,0.25)' }}>
+        <p className="text-xs text-center" style={{ color: 'rgba(255, 255, 255, 0.66)' }}>
           A conceptual experience demonstrating how donations can transform digital environments in real time.
         </p>
         <div className="flex gap-4">
           <a 
             href="#" 
-            style={{ color: 'rgba(214,207,194,0.25)', transition: 'color 0.3s' }} 
+            style={{ color: 'rgba(255, 255, 255, 0.66)', transition: 'color 0.3s' }} 
             onMouseOver={(e) => e.target.style.color = 'var(--accent)'}
-            onMouseOut={(e) => e.target.style.color = 'rgba(214,207,194,0.25)'}
+            onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.66)'}
             aria-label="Twitter"
           >
             <i className="fa-brands fa-x-twitter"></i>
           </a>
           <a 
             href="#" 
-            style={{ color: 'rgba(214,207,194,0.25)', transition: 'color 0.3s' }} 
+            style={{ color: 'rgba(255, 255, 255, 0.66)', transition: 'color 0.3s' }} 
             onMouseOver={(e) => e.target.style.color = 'var(--accent)'}
-            onMouseOut={(e) => e.target.style.color = 'rgba(214,207,194,0.25)'}
+            onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.66)'}
             aria-label="Instagram"
           >
             <i className="fa-brands fa-instagram"></i>
           </a>
           <a 
             href="#" 
-            style={{ color: 'rgba(214,207,194,0.25)', transition: 'color 0.3s' }} 
+            style={{ color: 'rgba(255, 255, 255, 0.66)', transition: 'color 0.3s' }} 
             onMouseOver={(e) => e.target.style.color = 'var(--accent)'}
-            onMouseOut={(e) => e.target.style.color = 'rgba(214,207,194,0.25)'}
+            onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.66)'}
             aria-label="GitHub"
           >
             <i className="fa-brands fa-github"></i>
