@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../styleCompants/Hero.css';
 import "../styles/global.css"
-import myVideo from '/hero_video_1.mp4';
+import myVideo from '/hero_video_2.mp4';
 import { smoothScrollToId } from '../utils/smoothScroll';
 
 const NAV_ITEMS = [
