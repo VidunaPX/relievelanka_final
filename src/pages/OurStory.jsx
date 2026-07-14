@@ -1,0 +1,96 @@
+import React from 'react';
+import '../styleCompants/Story.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+const milestones = [
+  {
+    year: '2022',
+    title: 'A spreadsheet and a flood',
+    body: 'After the floods in Ratnapura, a handful of volunteers were tracking donations in a shared spreadsheet. It worked, barely, for 40 families. It fell over at 400.',
+  },
+  {
+    year: '2023',
+    title: 'Relieve Lanka goes live',
+    body: 'We built the first version of the platform so anyone could see, in real time, where their donation went — not just that it was "received."',
+  },
+  {
+    year: '2024',
+    title: 'From one district to sixteen',
+    body: 'Local coordinators in sixteen districts started reporting directly into the platform, replacing phone calls and paper logs with live updates.',
+  },
+  {
+    year: '2025',
+    title: '3,000 families and counting',
+    body: 'What started as a way to track one flood response is now the record of how Sri Lankans and the diaspora look after each other.',
+  },
+];
+
+const OurStory = () => {
+  return (
+    <div className="App">
+      <Header />
+      <section
+        id="our-story"
+        className="relative z-10 py-24 px-6"
+        style={{
+          background: 'linear-gradient(180deg, var(--dark-blue) 0%, var(--light-blue) 100%)',
+          borderTop: '1px solid rgba(255,255,255,0.04)',
+        }}
+      >
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center gap-2 mb-4">
+            <i className="fa-solid fa-leaf" style={{ color: 'var(--accent)' }}></i>
+            <span
+              className="text-xs uppercase tracking-widest"
+              style={{ color: 'rgba(255,255,255,0.55)', letterSpacing: '0.15em' }}
+            >
+              Our Story
+            </span>
+          </div>
+
+          <h2 className="font-display text-3xl md:text-4xl text-white leading-tight mb-6 max-w-2xl">
+            It started with a spreadsheet that couldn't keep up.
+          </h2>
+
+          <p
+            className="text-sm md:text-base leading-relaxed mb-16"
+            style={{ color: 'rgba(255,255,255,0.72)', maxWidth: '60ch' }}
+          >
+            Relieve Lanka wasn't planned as a platform. It grew out of a real
+            problem, during a real flood, when a group of volunteers realised
+            that trust between a donor and a family shouldn't depend on a phone
+            call that may never come.
+          </p>
+
+          <div className="story-timeline">
+            {milestones.map((item, index) => (
+              <div className="story-row" key={item.year}>
+                <div className="story-rail">
+                  <span className="story-dot" style={{ animationDelay: `${index * 0.15}s` }} />
+                  {index < milestones.length - 1 && <span className="story-line" />}
+                </div>
+
+                <div className="story-content">
+                  <span className="story-year font-display" style={{ color: 'var(--accent)' }}>
+                    {item.year}
+                  </span>
+                  <h3 className="text-white text-lg font-medium mb-2">{item.title}</h3>
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ color: 'rgba(255,255,255,0.68)', maxWidth: '52ch' }}
+                  >
+                    {item.body}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+};
+
+export default OurStory;
