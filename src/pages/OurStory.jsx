@@ -2,6 +2,7 @@ import React from 'react';
 import '../styleCompants/Story.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import AboutUs from '../components/AboutUs';
 
 const milestones = [
   {
@@ -34,7 +35,7 @@ const OurStory = () => {
         id="our-story"
         className="relative z-10 py-24 px-6"
         style={{
-          background: 'linear-gradient(180deg, var(--dark-blue) 0%, var(--light-blue) 100%)',
+          backgroundColor: '#050956',
           borderTop: '1px solid rgba(255,255,255,0.04)',
         }}
       >
@@ -88,7 +89,8 @@ const OurStory = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      <AboutUs />
+      <Footer backgroundColor="#000000" />
     </div>
   );
 };
