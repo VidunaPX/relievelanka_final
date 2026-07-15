@@ -12,7 +12,12 @@ const NAV_ITEMS = [
   { label: 'About Us', id: 'about' },
 ];
 
-const Hero = ({ onShowDonationDetails }) => {
+const Hero = ({
+  onShowDonationDetails,
+  title = 'Ensuring potential is defined by intellect, not circumstance',
+  showCta = true,
+  variant = 'default',
+}) => {
   const [ctaPhraseIndex, setCtaPhraseIndex] = useState(0);
   const [isRotatingOut, setIsRotatingOut] = useState(false);
   const lastScrollY = useRef(0);
@@ -42,7 +47,10 @@ const Hero = ({ onShowDonationDetails }) => {
 
 
   return (
-    <section id="hero" className="relative">
+    <section
+      id="hero"
+      className={`relative${variant === 'compact' ? ' hero--compact' : ''}`}
+    >
       <div className="hero-video-shell">
         <div className="video-background">
           <video className="hero-video" autoPlay muted loop playsInline>
@@ -50,15 +58,17 @@ const Hero = ({ onShowDonationDetails }) => {
           </video>
           
           <div className="hero-content">
-            <h1 className="hero-title"> Ensuring potential is defined by intellect, not circumstance</h1>
-            <div className="cta-wrapper">
-              <button className="cta-button-white" onClick={onShowDonationDetails}>
-                  Donate 
-              </button>
-              <p className={`cta-text${isRotatingOut ? ' rotate-out' : ''}`}>
-                 {ctaPhrases[ctaPhraseIndex]}
-           </p>
-            </div>
+            <h1 className="hero-title">{title}</h1>
+            {showCta && (
+              <div className="cta-wrapper">
+                <button className="cta-button-white" onClick={onShowDonationDetails}>
+                  Donate
+                </button>
+                <p className={`cta-text${isRotatingOut ? ' rotate-out' : ''}`}>
+                  {ctaPhrases[ctaPhraseIndex]}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -1,96 +1,92 @@
 import React from 'react';
+import '../styles/global.css';
 import '../styleCompants/Story.css';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
+import Footer from '../components/Footer';
 
-const milestones = [
+const jotNotes = [
   {
-    year: '2022',
-    title: 'A spreadsheet and a flood',
-    body: 'After the floods in Ratnapura, a handful of volunteers were tracking donations in a shared spreadsheet. It worked, barely, for 40 families. It fell over at 400.',
+    label: 'Field-first transparency',
+    text: 'Every donation is tracked in real time so donors see exactly where their support goes — not just that it was received.',
   },
   {
-    year: '2023',
-    title: 'Relieve Lanka goes live',
-    body: 'We built the first version of the platform so anyone could see, in real time, where their donation went — not just that it was "received."',
+    label: 'Precision over plurality',
+    text: 'Over 90% of funds go directly to the field, creating deep, long-term impact for the students we serve.',
   },
   {
-    year: '2024',
-    title: 'From one district to sixteen',
-    body: 'Local coordinators in sixteen districts started reporting directly into the platform, replacing phone calls and paper logs with live updates.',
+    label: 'Education over circumstance',
+    text: 'We focus on students most at risk of being filtered out by disaster, poverty, and systemic gaps.',
   },
   {
-    year: '2025',
-    title: '3,000 families and counting',
-    body: 'What started as a way to track one flood response is now the record of how Sri Lankans and the diaspora look after each other.',
+    label: 'From youth, for youth',
+    text: 'Relieve Lanka is built and led by young people who believe merit — not background — should define success.',
   },
 ];
 
 const OurStory = () => {
   return (
-    <div className="App">
+    <div className="App our-story-page">
       <Header />
-      <section
-        id="our-story"
-        className="relative z-10 py-24 px-6"
-        style={{
-          backgroundColor: '#050956',
-          borderTop: '1px solid rgba(255,255,255,0.04)',
-        }}
-      >
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-2 mb-4">
-            <i className="fa-solid fa-leaf" style={{ color: 'var(--accent)' }}></i>
-            <span
-              className="text-xs uppercase tracking-widest"
-              style={{ color: 'rgba(255,255,255,0.55)', letterSpacing: '0.15em' }}
-            >
-              Our Story
-            </span>
-          </div>
+      <main className="relative z-10 our-story-main">
+        <Hero title="Our Story" showCta={false} variant="compact" />
 
-          <h2 className="font-display text-3xl md:text-4xl text-white leading-tight mb-6 max-w-2xl">
-            It started with a spreadsheet that couldn't keep up.
-          </h2>
+        <section className="story-page">
+          <div className="story-page__inner">
+            <div className="story-who-we-are">
+              <h2 className="story-section-heading">Who we are</h2>
+              <p className="story-body">
+                Relieve Lanka is a youth-led organization dedicated to ensuring that potential
+                is defined by intellect, not circumstance. Born out of a real crisis during the
+                floods in Ratnapura, we grew from a shared spreadsheet into a platform that
+                connects donors directly with families and students across Sri Lanka — building
+                trust through transparency, not phone calls that may never come.
+              </p>
+            </div>
 
-          <p
-            className="text-sm md:text-base leading-relaxed mb-16"
-            style={{ color: 'rgba(255,255,255,0.72)', maxWidth: '60ch' }}
-          >
-            Relieve Lanka wasn't planned as a platform. It grew out of a real
-            problem, during a real flood, when a group of volunteers realised
-            that trust between a donor and a family shouldn't depend on a phone
-            call that may never come.
-          </p>
+            <ul className="story-jot-notes">
+              {jotNotes.map((note) => (
+                <li key={note.label}>
+                  <strong>{note.label}</strong>
+                  {' — '}
+                  {note.text}
+                </li>
+              ))}
+            </ul>
 
-          <div className="story-timeline">
-            {milestones.map((item, index) => (
-              <div className="story-row" key={item.year}>
-                <div className="story-rail">
-                  <span className="story-dot" style={{ animationDelay: `${index * 0.15}s` }} />
-                  {index < milestones.length - 1 && <span className="story-line" />}
-                </div>
-
-                <div className="story-content">
-                  <span className="story-year font-display" style={{ color: 'var(--accent)' }}>
-                    {item.year}
-                  </span>
-                  <h3 className="text-white text-lg font-medium mb-2">{item.title}</h3>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{ color: 'rgba(255,255,255,0.68)', maxWidth: '52ch' }}
-                  >
-                    {item.body}
-                  </p>
-                </div>
+            <div className="story-mission-vision-box">
+              <div className="story-inner-box">
+                <h3 className="story-inner-heading">Our Mission</h3>
+                <p>
+                  To ensure merit is the only determinant for success by providing direct,
+                  transparent support to students affected by disaster and poverty — so no
+                  young person&apos;s future is limited by the circumstances they were born into.
+                </p>
               </div>
-            ))}
+              <div className="story-inner-box">
+                <h3 className="story-inner-heading">Our Vision</h3>
+                <p>
+                  A Sri Lanka where every young person&apos;s potential is defined by intellect
+                  and effort, where communities and the diaspora look after each other with
+                  clarity, accountability, and lasting impact.
+                </p>
+              </div>
+            </div>
+
+            <div className="story-image-section">
+              <img
+                src="/students_flood.jpg"
+                alt="Students supported by Relieve Lanka"
+                className="story-image"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-      <AboutUs />
-      <Footer backgroundColor="#000000" />
+        </section>
+
+        <AboutUs />
+      </main>
+      <Footer backgroundColor="#050956" />
     </div>
   );
 };
