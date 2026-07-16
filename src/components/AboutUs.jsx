@@ -5,10 +5,10 @@ import '../styleCompants/AboutUs.css';
 const AboutUs = () => {
   const teamMembers = [
     {
-      name: 'Viduna Pilanthange',
+      name: 'Viduna Pilanavithanage',
       role: 'Founder',
       image: 'viduna-pfp6.png',
-      alt: "Viduna Pilanthange",
+      alt: "Viduna Pilanavithanage",
       bio: 'Driven by his heritage and a sense of debt to the Sri Lankan education system, Viduna founded Relieve Lanka to ensure merit is the only determinant for success.'
     },
     {
