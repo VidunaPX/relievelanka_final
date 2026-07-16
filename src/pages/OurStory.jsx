@@ -37,11 +37,16 @@ const OurStory = () => {
             <div className="story-who-we-are">
               <h2 className="story-section-heading">Who we are</h2>
               <p className="story-body">
-                Relieve Lanka is a youth-led organization dedicated to ensuring that potential
-                is defined by intellect, not circumstance. Born out of a real crisis during the
-                floods in Ratnapura, we grew from a shared spreadsheet into a platform that
-                connects donors directly with families and students across Sri Lanka — building
-                trust through transparency, not phone calls that may never come.
+                In November 2025, Cyclone Ditwah tore through the Knuckles Mountain Range in Sri Lanka. Landslide zones were declared across the Yahangala area. In Nelum Mala, 31 people died when the mountain gave way, and of thirteen houses in the village, only one was left standing.
+              </p>
+              <p className="story-body">
+                For a few days, the cyclone was national news. Then the cameras moved on. Three months later, a report from Nelum Mala found villagers still waiting on relief officials had promised the day after the disaster, including, according to a local temple monk quoted in that report, school supplies for children that still hadn't arrived. The story doesn't end when the coverage does. It just stops being anyone's problem to report on.
+              </p>
+              <p className="story-body">
+                Relieve Lanka began in that gap. We're starting in Nelum Mala, the hardest-hit of the Yahangala villages, with plans to extend support to neighboring communities as this work continues.
+              </p>
+              <p className="story-body">
+                Rather than spreading limited support thinly across many places, we're committing to doing this properly in one village first: shoes, uniforms, books, and basic school supplies, the same essentials families in Nelum Mala are still waiting on months later. Structural repairs to school buildings are planned for a later phase, once this groundwork is fully in place.
               </p>
             </div>
 
@@ -59,27 +64,15 @@ const OurStory = () => {
               <div className="story-inner-box">
                 <h3 className="story-inner-heading">Our Mission</h3>
                 <p>
-                  To ensure merit is the only determinant for success by providing direct,
-                  transparent support to students affected by disaster and poverty — so no
-                  young person&apos;s future is limited by the circumstances they were born into.
+                  Relieve Lanka delivers direct, transparent support to children whose education has been disrupted by disaster, starting in Nelum Mala and the villages of Yahangala.
                 </p>
               </div>
               <div className="story-inner-box">
                 <h3 className="story-inner-heading">Our Vision</h3>
                 <p>
-                  A Sri Lanka where every young person&apos;s potential is defined by intellect
-                  and effort, where communities and the diaspora look after each other with
-                  clarity, accountability, and lasting impact.
+                  A Sri Lanka where a child's circumstances are never the end of their story.
                 </p>
               </div>
-            </div>
-
-            <div className="story-image-section">
-              <img
-                src="/students_flood.jpg"
-                alt="Students supported by Relieve Lanka"
-                className="story-image"
-              />
             </div>
           </div>
         </section>

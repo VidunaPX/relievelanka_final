@@ -7,7 +7,7 @@ const AboutUs = () => {
     {
       name: 'Viduna Pilanthange',
       role: 'Founder',
-      image: 'vidunaimage.png',
+      image: 'viduna-pfp6.png',
       alt: "Viduna Pilanthange",
       bio: 'Driven by his heritage and a sense of debt to the Sri Lankan education system, Viduna founded Relieve Lanka to ensure merit is the only determinant for success.'
     },
@@ -26,10 +26,10 @@ const AboutUs = () => {
       bio: 'Jaynil spearheads the data-driven side of the mission, analyzing regional geohazards and socioeconomic gaps to identify the students most at risk of being "filtered out" by the system.'
     },
     {
-      name: 'Joshitaa',
+      name: 'Joshitaa Ganapathy',
       role: 'Operations Manager',
       image: 'https://picsum.photos/seed/team4/300/300.jpg',
-      alt: 'Joshitaa',
+      alt: 'Joshitaa Ganapathy',
       bio: 'Joshitaa manages the "Zero Direct Funds" policy, overseeing the complex reimbursement process and bi-weekly audits to ensure every dollar is used strictly for its intended educational purpose.'
     },
     {
@@ -42,7 +42,7 @@ const AboutUs = () => {
     {
       name: 'Omar Mohamoud',
       role: 'Event Coordinator',
-      image: 'https://picsum.photos/seed/team6/300/300.jpg',
+      image: '/omar-pfp.jpg',
       alt: 'Omar Mohamoud',
       bio: 'Omar organizes fundraising events and community outreach programs to raise awareness and gather support for our mission.'
     }
@@ -176,7 +176,7 @@ const AboutUs = () => {
                 background: 'rgba(255, 255, 255, 0.1)',
                 backdropFilter: 'blur(10px)',
                 borderRadius: '20px',
-                padding: '40px 30px',
+                padding: '30px 20px',
                 border: '1px solid rgba(255, 255, 255, 0.2)',
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
@@ -220,16 +220,9 @@ const AboutUs = () => {
                 color: 'rgba(255, 255, 255, 0.8)',
                 fontSize: '0.95rem',
                 fontWeight: 500,
-                marginBottom: '12px'
+                marginBottom: '0'
               }}>
                 {member.role}
-              </p>
-              <p style={{ 
-                color: 'rgba(255, 255, 255, 0.6)',
-                fontSize: '0.85rem',
-                lineHeight: '1.5'
-              }}>
-                {member.bio}
               </p>
             </div>
           ))}
