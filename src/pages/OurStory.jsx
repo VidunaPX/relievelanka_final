@@ -30,7 +30,7 @@ const OurStory = () => {
     <div className="App our-story-page">
       <Header />
       <main className="relative z-10 our-story-main">
-        <Hero title="Our Story" showCta={false} variant="compact" />
+        <Hero title="About Us" showCta={false} variant="compact" />
 
         <section className="story-page">
           <div className="story-page__inner">

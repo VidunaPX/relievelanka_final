@@ -14,21 +14,21 @@ const AboutUs = () => {
     {
       name: 'Deepaka Wickramasekara',
       role: 'Logistics & Finance Manager',
-      image: 'deepimage.png',
+      image: 'deepaka-pfp.jpg',
       alt: "Deepaka Wickramasekara",
       bio: 'Deepaka leads the "Precision over Plurality" strategy, ensuring that over 90% of funds go directly to the field to create deep, long-term impact for selected students.'
     },
     {
       name: 'Jaynil Patel',
       role: 'Research Lead',
-      image: 'https://picsum.photos/seed/team3/300/300.jpg',
+      image: 'jaynil-pfp.jpg',
       alt: 'Jaynil Patel',
       bio: 'Jaynil spearheads the data-driven side of the mission, analyzing regional geohazards and socioeconomic gaps to identify the students most at risk of being "filtered out" by the system.'
     },
     {
       name: 'Joshitaa Ganapathy',
       role: 'Operations Manager',
-      image: 'https://picsum.photos/seed/team4/300/300.jpg',
+      image: 'joshitaa-pfp3.jpg',
       alt: 'Joshitaa Ganapathy',
       bio: 'Joshitaa manages the "Zero Direct Funds" policy, overseeing the complex reimbursement process and bi-weekly audits to ensure every dollar is used strictly for its intended educational purpose.'
     },

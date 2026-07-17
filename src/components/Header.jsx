@@ -30,7 +30,7 @@ const Header = () => {
         
         <div className="hidden md:flex items-center gap-8">
           <Link to="/" className="nav-link">Home</Link>
-          <Link to="/our-story" className="nav-link">Our Story</Link>
+          <Link to="/our-story" className="nav-link">About Us</Link>
         </div>
         
         <button 
@@ -48,7 +48,7 @@ const Header = () => {
         className={`${isMobileMenuOpen ? 'flex' : 'hidden'} md:hidden mt-4 pb-4 flex-col gap-4 items-center`}
       >
         <Link to="/" className="nav-link" onClick={closeMobileMenu}>Home</Link>
-        <Link to="/our-story" className="nav-link" onClick={closeMobileMenu}>Our Story</Link>
+        <Link to="/our-story" className="nav-link" onClick={closeMobileMenu}>About Us</Link>
       </div>
     </nav>
   );
