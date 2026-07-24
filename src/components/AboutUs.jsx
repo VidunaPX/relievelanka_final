@@ -35,7 +35,7 @@ const AboutUs = () => {
     {
       name: 'Tanushka Koturu',
       role: 'Brand Lead',
-      image: 'https://picsum.photos/seed/team5/300/300.jpg',
+      image: 'tanushka-pfp2.jpg',
       alt: 'Tanushka Koturu',
       bio: 'Tanushka leads the organization\'s commitment to absolute transparency, ensuring our digital presence accurately reflects our "field-first" model and provides donors with constant, authenticated updates.'
     },
