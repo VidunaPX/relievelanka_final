@@ -10,7 +10,7 @@ const Footer = ({ backgroundColor = 'linear-gradient(var(--dark-blue), var(--lig
           <span className="font-display text-lg text-white">Relieve Lanka</span>
         </div>
         <p className="text-xs text-center" style={{ color: 'rgba(255, 255, 255, 0.66)' }}>
-          A conceptual experience demonstrating how donations can transform digital environments in real time.
+          Till Children are free to learn, we are not free to rest
         </p>
         <div className="flex gap-4">
           <a 

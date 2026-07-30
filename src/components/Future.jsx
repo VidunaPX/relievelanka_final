@@ -6,17 +6,17 @@ const Future = () => {
     {
       icon: 'fa-shield-halved',
       title: 'Solar-Powered Classrooms',
-      description: 'Equipping schools with solar panels to ensure learning never stops, providing clean and consistent electricity regardless of fuel shortages or grid failures.'
+      description: 'Equipping schools with solar panels to ensure learning never stops, providing clean and constant electricity regardless of power grid failures.'
     },
     {
       icon: 'fa-people-group',
-      title: 'High-Tech Learning Labs',
+      title: 'Modern Learning Spaces',
       description: 'Closing the digital divide by providing computers and modern tools, giving rural students the same science and tech resources as their urban peers.'
     },
     {
       icon: 'fa-graduation-cap',
       title: '24/7 Learning Support',
-      description: 'Upgrading school infrastructure into community hubs that support learning at all hours, eliminating the locational barriers for students traveling long distances.'
+      description: 'Upgrading school infrastructure into community hubs that support learning at all times, allowing students to be able to find tiem to study and learn even after school hours, and providing access to online resources and tutoring.'
     }
   ];
 
@@ -31,7 +31,7 @@ const Future = () => {
           <span style={{ color: 'var(--gold)' }}> A Future Without Barriers. </span>
         </h2>
         <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-12" style={{ color: 'rgba(214,207,194,0.45)' }}>
-          Beyond immediate grants, we are building the foundation for a permanent educational ecosystem in Yahangala. We don't just want students to return to school; we want them to return to a superior learning environment that is resilient to future crises. By investing in resilient infrastructure and modern technology, we ensure that the next generation of rural talent has the tools to break the cycle of poverty for good.
+          Beyond immediate grants, we are building the foundation for a permanent educational system in Yahangala. We don't just want students to return to school, we want them to return to a better learning environment that is resilient to future crises. By investing in resilient infrastructure and modern technology, we ensure that the next generation of rural talent has the tools to break the cycle of poverty for good.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
           {futureInitiatives.map((initiative, index) => (

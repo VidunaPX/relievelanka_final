@@ -1,28 +1,6 @@
 import React from 'react';
 import '../styleCompants/Story.css';
  
-const milestones = [
-  {
-    year: '2022',
-    title: 'A spreadsheet and a flood',
-    body: 'After the floods in Ratnapura, a handful of volunteers were tracking donations in a shared spreadsheet. It worked, barely, for 40 families. It fell over at 400.',
-  },
-  {
-    year: '2023',
-    title: 'Relieve Lanka goes live',
-    body: 'We built the first version of the platform so anyone could see, in real time, where their donation went — not just that it was "received."',
-  },
-  {
-    year: '2024',
-    title: 'From one district to sixteen',
-    body: 'Local coordinators in sixteen districts started reporting directly into the platform, replacing phone calls and paper logs with live updates.',
-  },
-  {
-    year: '2025',
-    title: '3,000 families and counting',
-    body: 'What started as a way to track one flood response is now the record of how Sri Lankans and the diaspora look after each other.',
-  },
-];
  
 const OurStory = () => {
   return (

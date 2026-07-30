@@ -125,7 +125,7 @@ const Donate = ({ onDonation, funding = 0, goal = 50000, donors = 0}) => {
 
               <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
                 <span className="font-sans text-5xl text-white font-bold">{fundPercent}%</span>
-                <span className="text-sm mt-2 font-sans" style={{ color: 'rgba(255,255,255,0.78)' }}>of phase 1 goal reached</span>
+                <span className="text-sm mt-2 font-sans" style={{ color: 'rgba(255,255,255,0.78)' }}>Of The Way to Phase 1</span>
               </div>
             </div>
           </div>
