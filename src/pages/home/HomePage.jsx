@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/global.css';
-import '../styles/waterfall.css';
+import '../../styles/global.css';
+import '../../styles/waterfall.css';
 
-import Header from '../components/Header';
-import BackgroundEffects from '../components/BackgroundEffects';
-import Hero from '../components/Hero';
-import Crisis from '../components/Crisis';
-import TransitionSection from '../components/TransitionSection';
-import OurWork from '../components/OurWork';
-import AboutUs from '../components/AboutUs';
-import Donate from '../components/Donate';
-import PostSection from '../components/postSection';
-import DonationHoriz from '../components/DonationHoriz';
-import Footer from '../components/Footer';
-import useScrollObserver from '../hooks/useScrollObserver';
-import { smoothScrollToId } from '../utils/smoothScroll';
+import Header from '../../components/Header';
+import BackgroundEffects from '../../components/BackgroundEffects';
+import Hero from '../../components/Hero';
+import Crisis from '../../components/Crisis';
+import TransitionSection from '../../components/TransitionSection';
+import OurWork from '../../components/OurWork';
+import AboutUs from '../../components/AboutUs';
+import Donate from '../../components/Donate';
+import PostSection from '../../components/postSection';
+import DonationHoriz from '../../components/DonationHoriz';
+import Footer from '../../components/Footer';
+import useScrollObserver from '../../hooks/useScrollObserver';
+import { smoothScrollToId } from '../../utils/smoothScroll';
 
 const Home = () => {
   const [funding, setFunding] = useState(0);
