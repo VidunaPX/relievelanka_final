@@ -60,10 +60,7 @@ const Home = () => {
         <Crisis />
         <TransitionSection />
 
-        {/* <DonationJourney /> */}
-
         <DonationHoriz />
-        {/*<Why />*/}
         <OurWork />
 
         <Donate
