@@ -89,7 +89,7 @@ const Donate = ({ onDonation, funding = 0, goal = 50000, donors = 0}) => {
 
             <div className="flex justify-start">
               <a
-                href="https://gofund.me/f1c00af39"
+                href="https://gofund.me/01daa0a1c"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="donate-cta inline-block"
